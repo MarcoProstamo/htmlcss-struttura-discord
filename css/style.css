@@ -6,19 +6,22 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
 /* Container */
 
 .container {
   width: 600px;
   max-width: 100%;
-  padding: 0 10px;
   margin: 0 auto;
 }
 
 .container-sm {
   width: 450px;
   max-width: 100%;
-  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -49,10 +52,6 @@
 }
 
 /* Other */
-
-.padding {
-  padding: 5px 10px;
-}
 
 .dashed-border {
   border: 1px dashed black;
@@ -118,10 +117,6 @@
   background-color: #7efcd2;
 }
 
-.bg-darkgray {
-  background-color: #222629;
-}
-
 /* Header */
 
 .page-header {
@@ -141,31 +136,38 @@ li {
   text-align: right;
 }
 
-/* Footer */
-
-.lower-footer {
-  margin-top: 15px;
+.row.bg-orange > div,
+.row.bg-orange > nav {
+  padding: 5px 10px;
 }
 
-/* Da rivedere */
-div.col-25.white-dashed-border {
-  height: calc(100% - 2px);
-}
+/* Main */
 
-.divider {
-  border-top: 1px solid white;
-  padding-top: 14px;
-}
-
-.section-spacing {
+main section {
   padding: 20px 0;
 }
 
+/* Footer */
+
 .page-footer {
-  padding-top: 10px;
+  padding-top: 20px;
+  background-color: #222629;
+}
+
+.lower-footer {
+  margin-top: 20px;
+}
+
+div.col-25.white-dashed-border {
+  height: calc(100% - 2px);
 }
 
 div.row.bg-lightaqua {
   padding: 20px 0;
   justify-content: space-between;
+}
+
+.divider {
+  border-top: 1px solid white;
+  padding-top: calc(20px - 1px);
 }
